@@ -45,6 +45,7 @@
                             <th>@lang('site.first_name')</th>
                             <th>@lang('site.last_name')</th>
                             <th>@lang('site.email')</th>
+                            <th>@lang('site.image')</th>
                             <th>@lang('site.action')</th>
                         </tr>
                         </thead>
@@ -55,6 +56,7 @@
                                 <td>{{$user->first_name}}</td>
                                 <td>{{$user->last_name}}</td>
                                 <td>{{$user->email}}</td>
+                                <td><img src="{{$user->Image_Path}}" alt="" style="width: 70px" class="img-thumbnail"></td>
                                 <td>
                                     @if (auth()->user()->hasPermission('users_update'))
                                         <a class="btn btn-info btn-sm" href="{{route('dashboard.users.edit',$user->id)}}"><i class="fa fa-edit" style="padding: 0 5px"></i>@lang('site.edit')</a>

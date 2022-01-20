@@ -20,7 +20,7 @@
             <div class="card-header">
               <h3 class="card-title"></h3>
             </div>
-                <form action="{{route('dashboard.users.update',$user->id)}}" method="POST">
+                <form action="{{route('dashboard.users.update',$user->id)}}" method="POST" enctype="multipart/form-data">
                     <div class="card-body">
                     @csrf
                     @method('put')
@@ -38,6 +38,15 @@
                     <div class="form-group">
                     <label for="email">@lang('site.email')</label>
                     <input type="email" name="email" value="{{$user->email}}" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="image">@lang('site.image')</label>
+                        <input type="file" name="image"  class="form-control image">
+                    </div>
+
+                    <div class="form-group">
+                        <img src="{{asset('uploads/user_images/'.$user->image)}}" alt="" style="width: 70px" class="img-thumbnail image-preview">
                     </div>
 
                     <div class="form-group">

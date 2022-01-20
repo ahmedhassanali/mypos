@@ -42,7 +42,11 @@
 
                     <div class="form-group">
                         <label for="image">@lang('site.image')</label>
-                        <input type="file" name="email"  class="form-control">
+                        <input type="file" name="image"  class="form-control image">
+                    </div>
+
+                    <div class="form-group">
+                        <img src="{{asset('uploads\user_images\defult.png')}}" alt="" style="width: 70px" class="img-thumbnail image-preview">
                     </div>
 
                     <div class="form-group">
