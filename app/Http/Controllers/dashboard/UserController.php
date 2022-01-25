@@ -69,7 +69,6 @@ class UserController extends Controller
         $request_data['image'] = $request->image->hashName();
         }
 
-
         $user = User::create($request_data);
         $user->attachRole('admin');
         $user->syncPermissions($request->permissions);

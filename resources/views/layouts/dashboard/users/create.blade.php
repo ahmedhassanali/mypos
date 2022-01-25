@@ -62,7 +62,7 @@
                         <label for="">@lang('site.permissions')</label>
                         <div class="nav-tabs-custom">
                             @php
-                              $models=['users','category','proudects'];
+                              $models=['users','categories','products'];
                               $map=['read','create','delete','update'];
                             @endphp
 

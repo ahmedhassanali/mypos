@@ -30,9 +30,15 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
         Route::get('/index', [App\Http\Controllers\dashboard\dashboardController::class, 'index'])->name('index');
 
+        //User Route
         route::resource('users' ,'UserController')->except(['show']);
+
+        //Category  Route
+        route::resource('categories','dashboard\CategoryController')->except(['show']);
+
+        //product  Route
+        route::resource('products','dashboard\productController')->except(['show']);
 
         });
 
-    });
-//dashboard routs
+    }); //end dashboard routs

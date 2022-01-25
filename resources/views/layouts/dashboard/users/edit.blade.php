@@ -53,8 +53,8 @@
                         <label for="">@lang('site.permissions')</label>
                         <div class="nav-tabs-custom">
                             @php
-                              $models=['users','category','proudects'];
-                              $map=['read','create','delete','update'];
+                                $models=['users','categories','products'  ];
+                                $map   =['read','create','delete','update'];
                             @endphp
 
                               <ul class="nav nav-pills ml-auto p-2">

@@ -26,5 +26,30 @@ return[
      'yes'=>'نعم',
      "no"=>'لا',
      'image'=>'صورة',
+     'category'=>'القسم',
+     'categories'=>'الاقسام',
+     'name'=> 'الاسم',
+     'products' => 'المنتجات',
+     'product' =>'المنتج',
+     'purchase_price'=>'سعر الشراء',
+     'sale_price'=>'سعر البيع',
+     'stock'=>'المخزن',
+     'purchase price' =>'سعر الشراء',
+     'description' =>'الوصف',
+     'profit_percent'=>'نسبة المكسب',
+     'profit' => 'المكسب',
+     'products_count' => ' عددالمنتجات',
+     'related_products' => 'المنتجات المرتبطة',
+
+     'ar' => [
+         'name'=>'الاسم باللغة العربية',
+         'description'=>'الوصف باللغة العربية',
+     ],
+
+     'en' => [
+        'name'=>'الاسم باللغة الانجليزية',
+        'description'=>'الوصف بالغة الانجليزية',
+    ],
+
     ];
 
