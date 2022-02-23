@@ -5,7 +5,7 @@
     <section class="content-header">
         <h1>@lang('site.users')</h1>
         <ol class="breadcrumb">
-            <li><a href="{{route('dashboard.index')}}">@lang('site.dashboard')</a></li>
+            <li><a href="{{route('dashboard.welcome')}}">@lang('site.dashboard')</a></li>
             <li><a href="{{route('dashboard.users.index')}}">@lang('site.users')</a></li>
             <li class="active">@lang('site.edit')</li>
         </ol>
@@ -53,7 +53,7 @@
                         <label for="">@lang('site.permissions')</label>
                         <div class="nav-tabs-custom">
                             @php
-                                $models=['users','categories','products'  ];
+                                $models=['users','categories','products','clients','orders'];
                                 $map   =['read','create','delete','update'];
                             @endphp
 

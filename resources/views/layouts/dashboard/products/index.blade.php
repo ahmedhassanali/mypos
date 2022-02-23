@@ -5,7 +5,7 @@
     <section class="content-header">
 
         <ol class="breadcrumb">
-            <li><a href="{{route('dashboard.index')}}">@lang('site.dashboard')</a>   </li>
+            <li><a href="{{route('dashboard.welcome')}}">@lang('site.dashboard')</a>   </li>
             <li class="active" >@lang('site.products') </li>
         </ol>
 

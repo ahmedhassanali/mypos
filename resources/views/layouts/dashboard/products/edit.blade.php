@@ -5,7 +5,7 @@
     <section class="content-header">
         <h1>@lang('site.products')</h1>
         <ol class="breadcrumb">
-            <li><a href="{{route('dashboard.index')}}">@lang('site.dashboard')</a></li>
+            <li><a href="{{route('dashboard.welcome')}}">@lang('site.dashboard')</a></li>
             <li><a href="{{route('dashboard.products.index')}}">@lang('site.products')</a></li>
             <li class="active">@lang('site.update')</li>
         </ol>
@@ -51,18 +51,18 @@
 
                     <div class="form-group">
                         <label for="purchase_price">@lang('site.purchase_price')</label>
-                        <input type="text" name="purchase_price"  class="form-control" value="{{$product->purchase_price}}">
+                        <input type="text" step="0.01" name="purchase_price"  class="form-control" value="{{$product->purchase_price}}">
                     </div>
 
                     <div class="form-group">
                         <label for="sale_price">@lang('site.sale_price')</label>
-                        <input type="text" name="sale_price" class="form-control" value="{{$product->sale_price}}">
+                        <input type="text" step="0.01" name="sale_price" class="form-control" value="{{$product->sale_price}}">
                     </div>
 
 
                     <div class="form-group">
                         <label for="stock">@lang('site.stock')</label>
-                        <input type="text" name="stock" class="form-control" value="{{$product->stock}}">
+                        <input type="text" step="0.01"  name="stock" class="form-control" value="{{$product->stock}}">
                     </div>
 
 

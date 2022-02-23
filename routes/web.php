@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+// use Mcamara\LaravelLocalization\LaravelLocalization;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +19,7 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes(['register' => false]);
 
 Route::get('/',function(){
-    return redirect()->route('dashboard.index');
+    return redirect()->route('home');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -28,16 +30,22 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
         Route::prefix('dashboard')->name('dashboard.')->middleware(['auth'])->group(function () {
 
-        Route::get('/index', [App\Http\Controllers\dashboard\dashboardController::class, 'index'])->name('index');
+        Route::get('/', [App\Http\Controllers\dashboard\welcomeController::class, 'index'])->name('welcome');
+
+        Route::get('/index', [App\Http\Controllers\dashboard\welcomeController::class, 'index'])->name('index');
 
         //User Route
-        route::resource('users' ,'UserController')->except(['show']);
+        route::resource('users' ,'dashboard\UserController')->except(['show']);
 
         //Category  Route
         route::resource('categories','dashboard\CategoryController')->except(['show']);
 
         //product  Route
         route::resource('products','dashboard\productController')->except(['show']);
+
+        //client  Route
+        route::resource('clients','dashboard\clientController')->except(['show']);
+        route::resource('clients.orders','dashboard\client\orderController')->except(['show']);
 
         });
 

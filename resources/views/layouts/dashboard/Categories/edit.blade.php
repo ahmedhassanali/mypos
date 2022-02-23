@@ -5,7 +5,7 @@
     <section class="content-header">
         <h1>@lang('site.categories')</h1>
         <ol class="breadcrumb">
-            <li><a href="{{route('dashboard.index')}}">@lang('site.dashboard')</a></li>
+            <li><a href="{{route('dashboard.welcome')}}">@lang('site.dashboard')</a></li>
             <li><a href="{{route('dashboard.categories.index')}}">@lang('site.categories')</a></li>
             <li class="active">@lang('site.edit')</li>
         </ol>

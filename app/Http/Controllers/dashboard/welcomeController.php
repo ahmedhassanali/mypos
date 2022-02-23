@@ -6,7 +6,7 @@ use App\Models\User;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 use Illuminate\Http\Request;
 
-class dashboardController extends Controller
+class welcomeController extends Controller
 {
     public function __construct()
     {

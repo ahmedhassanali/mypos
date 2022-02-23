@@ -35,7 +35,7 @@ class CategoryController extends Controller
     {
         return view('layouts.dashboard.Categories.create');
 
-    }//end of Creat
+    }//end of Create
 
 
     public function store(Request $request)

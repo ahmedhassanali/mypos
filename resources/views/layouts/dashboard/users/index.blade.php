@@ -5,7 +5,7 @@
     <section class="content-header">
 
         <ol class="breadcrumb">
-            <li><a href="{{route('dashboard.index')}}">@lang('site.dashboard')</a>   </li>
+            <li><a href="{{route('dashboard.welcome')}}">@lang('site.dashboard')</a>   </li>
             <li class="active" >@lang('site.users') </li>
         </ol>
 
@@ -56,7 +56,7 @@
                                 <td>{{$user->first_name}}</td>
                                 <td>{{$user->last_name}}</td>
                                 <td>{{$user->email}}</td>
-                               
+
                                 <td><img src="{{$user->Image_Path}}" alt="" style="width: 70px" class="img-thumbnail"></td>
                                 <td>
                                     @if (auth()->user()->hasPermission('users_update'))

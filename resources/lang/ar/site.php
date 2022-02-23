@@ -40,7 +40,14 @@ return[
      'profit' => 'المكسب',
      'products_count' => ' عددالمنتجات',
      'related_products' => 'المنتجات المرتبطة',
-
+     'clients'=>'العملاء',
+     'address'=>'العنوان',
+     'phone'=>'رقم الهاتف',
+     'add_order' => 'اضافة طلب',
+     'orders' => 'الطلبات',
+     'quantity'=>'الكمية',
+     'price'=>'السعر',
+     'total'=>'المجموع',
      'ar' => [
          'name'=>'الاسم باللغة العربية',
          'description'=>'الوصف باللغة العربية',

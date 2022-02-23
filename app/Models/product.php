@@ -32,6 +32,9 @@ class product extends Model
         return asset('uploads/product_images/'. $this->image);
     }
 
+    public function order(){
+        return $this->belongsToMany(order::class,'product_order');
+    }
 
 
 
